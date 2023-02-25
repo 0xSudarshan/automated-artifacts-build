@@ -1,0 +1,10 @@
+name: 'Run script'
+
+inputs:
+  AUTH_TOKEN:
+    description: 'github token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+

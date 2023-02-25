@@ -1,8 +1,12 @@
 import { Octokit } from '@octokit/core'
+import {getInput} from '@actions/core'
+
+const AUTH_TOKEN = getInput('AUTH_TOKEN')
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: AUTH_TOKEN
 })
+
 
 const {data} = await octokit.request('GET /repos/{org}/{repo}/issues?labels=agenda', {
     org:"QlimesEth",
