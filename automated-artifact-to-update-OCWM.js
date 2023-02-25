@@ -2,7 +2,9 @@ import { Octokit } from '@octokit/core'
 import {getInput} from '@actions/core'
 
 const AUTH_TOKEN = getInput('AUTH_TOKEN')
+// const AUTH_TOKEN = "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"
 const ORGANISATION = getInput('ORGANISATION')
+// const ORGANISATION = "QlimesEth"
 // const REPOSITORIES  = getInput('REPOSITORIES')
 const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
