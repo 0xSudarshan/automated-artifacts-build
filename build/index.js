@@ -8010,8 +8010,8 @@ const AUTH_TOKEN = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('AUTH
 // const AUTH_TOKEN = "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"
 const ORGANISATION = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('ORGANISATION')
 // const ORGANISATION = "QlimesEth"
-// const REPOSITORIES  = getInput('REPOSITORIES')
-const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
+const REPOSITORIES  = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('REPOSITORIES')
+// const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
 for(let r=0 ; r< REPOSITORIES.length;r++){
     const octokit = new _octokit_core__WEBPACK_IMPORTED_MODULE_1__/* .Octokit */ .v({
