@@ -32,3 +32,5 @@ jobs:
         AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
         ORGANISATION: ${{vars.ORGANISATION}}
         REPOSITORIES: $${{vars.REPOSITORIES}}
+    -name: run
+        run: echo ${{vars.ORGANISATION}}
