@@ -2,17 +2,13 @@ import { Octokit } from '@octokit/core'
 import {getInput} from '@actions/core'
 
 const AUTH_TOKEN = getInput('AUTH_TOKEN')
-// const AUTH_TOKEN = "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"
+
 const ORGANISATION = getInput('ORGANISATION')
-// const ORGANISATION = "QlimesEth"
+
 const REPOSITORIES  = getInput('REPOSITORIES')
-// const REPOSITORIES  = 'Test-Repo-1,Test-Repo-2'
-// const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
+
 let repositories = REPOSITORIES.split(",")
-// console.log(NEW_REPOSITORY)
-// for(let i =0;i<2;i++){
-//     console.log(NEW_REPOSITORY[i])
-// }
+
 for(let r=0 ; r< repositories.length;r++){
     const octokit = new Octokit({
         auth: AUTH_TOKEN
