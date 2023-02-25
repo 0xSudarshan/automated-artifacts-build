@@ -26,11 +26,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
+    - name: runop
+      run: echo ${{vars.ORGANISATION}}
     - uses: actions/checkout@v2
     - uses: ./
       with: 
         AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
         ORGANISATION: ${{vars.ORGANISATION}}
         REPOSITORIES: $${{vars.REPOSITORIES}}
-    - name: runop
-      run: echo ${{vars.ORGANISATION}}
