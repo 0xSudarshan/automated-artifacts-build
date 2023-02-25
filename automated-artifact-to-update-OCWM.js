@@ -38,7 +38,7 @@ for(let r=0 ; r< REPOSITORIES.length;r++){
     }
     let template = JSON.stringify(JSON.stringify(body))
     let parsed = JSON.parse(JSON.parse(template))
-    octokit.request('PATCH /repos/{orgs}/{repo}/issues/{issue_number}', {
+    await octokit.request('PATCH /repos/{orgs}/{repo}/issues/{issue_number}', {
         orgs: ORGANISATION,
         repo: 'Community',
         issue_number: `${issue_numer}`,
