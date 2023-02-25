@@ -1,8 +1,5 @@
-import express, { json } from 'express'
 import { Octokit } from '@octokit/core'
 
-
-const app = express()
 const octokit = new Octokit({
     auth: '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'
 })
@@ -11,7 +8,6 @@ const {data} = await octokit.request('GET /repos/{org}/{repo}/issues?labels=agen
     org:"QlimesEth",
     repo:"Test-Repo-1",
   });
-
 const workMeetings = await octokit.request('GET /repos/{org}/{repo}/issues?labels=Working%20Meetings&per_page=1', {
     org: 'QlimesEth',
     repo: 'Community',
@@ -47,11 +43,3 @@ octokit.request('PATCH /repos/{orgs}/{repo}/issues/{issue_number}', {
     }
 })
 
-
-
-
-
-
-app.listen(5000, () => {
-    console.log("running at 3000...")
-})
