@@ -8011,6 +8011,7 @@ const AUTH_TOKEN = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('AUTH
 const ORGANISATION = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('ORGANISATION')
 // const ORGANISATION = "QlimesEth"
 const REPOSITORIES  = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('REPOSITORIES')
+// console.log(REPOSITORIES)
 // const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
 for(let r=0 ; r< REPOSITORIES.length;r++){
