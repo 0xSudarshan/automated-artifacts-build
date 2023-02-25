@@ -5,11 +5,11 @@ inputs:
     description: 'github token'
     required: true
   ORGANISATION:
-    description: 'github token'
+    description: 'Organisation'
     required: true
-  REPOSITORIES:
-    description: 'github token'
-    required: true
+  # REPOSITORIES:
+  #   description: 'github token'
+  #   required: true
 runs:
   using: 'node16'
   main: 'build/index.js'

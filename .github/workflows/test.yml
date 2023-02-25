@@ -31,4 +31,4 @@ jobs:
       with: 
         AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
         ORGANISATION: ${{secrets.ORGANISATION}}
-        REPOSITORIES: $${{secrets.REPOSITORIES}}
+        # REPOSITORIES: $${{secrets.REPOSITORIES}}
