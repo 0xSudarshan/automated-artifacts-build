@@ -4,7 +4,7 @@
   "description": "artifacts to append PRs/issues in the agenda of OCWM",
   "main": "automated-artifact-to-update-OCWM.js",
   "scripts": {
-    "build": "ncc build automated-artifact-to-update-OCWM -o dist",
+    "build": "ncc build automated-artifact-to-update-OCWM -o build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
