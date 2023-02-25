@@ -7,9 +7,9 @@ inputs:
   ORGANISATION:
     description: 'Organisation'
     required: true
-  # REPOSITORIES:
-  #   description: 'github token'
-  #   required: true
+  REPOSITORIES:
+    description: 'repositories'
+    required: true
 runs:
   using: 'node16'
   main: 'build/index.js'
