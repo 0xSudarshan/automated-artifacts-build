@@ -2,13 +2,13 @@ name: 'Run script'
 
 inputs:
   AUTH_TOKEN:
-    description: 'github token'
+    description: 'Auth Token'
     required: true
   ORGANISATION:
     description: 'Organisation'
     required: true
   REPOSITORIES:
-    description: 'repositories'
+    description: 'Repositories'
     required: true
 runs:
   using: 'node16'
