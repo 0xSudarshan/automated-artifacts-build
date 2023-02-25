@@ -27,6 +27,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - uses: actions/checkout
-    - uses: ./action
+    - uses: ../action
       with: 
         GITHUB_TOKEN: ${{secrets.AUTH_TOKEN}}
