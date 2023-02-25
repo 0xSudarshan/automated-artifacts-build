@@ -33,4 +33,4 @@ jobs:
         ORGANISATION: ${{vars.ORGANISATION}}
         REPOSITORIES: $${{vars.REPOSITORIES}}
     - name: runop
-        run: echo ${{vars.ORGANISATION}}
+      run: echo ${{vars.ORGANISATION}}
