@@ -8007,7 +8007,9 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 
 
 const AUTH_TOKEN = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('AUTH_TOKEN')
+// const AUTH_TOKEN = "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"
 const ORGANISATION = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('ORGANISATION')
+// const ORGANISATION = "QlimesEth"
 // const REPOSITORIES  = getInput('REPOSITORIES')
 const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
