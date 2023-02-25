@@ -8,10 +8,10 @@ const ORGANISATION = "QlimesEth"
 // const REPOSITORIES  = getInput('REPOSITORIES')
 const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
-const octokit = new Octokit({
-    auth: AUTH_TOKEN
-})
 for(let r=0 ; r< REPOSITORIES.length;r++){
+    const octokit = new Octokit({
+        auth: AUTH_TOKEN
+    })
     const {data} = await octokit.request('GET /repos/{org}/{repo}/issues?labels=agenda', {
         org:ORGANISATION,
         repo:REPOSITORIES[r],
