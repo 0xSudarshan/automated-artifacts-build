@@ -27,7 +27,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: runop
-      run: echo ${{vars.REPOSITORIES[index]}}
+      run: echo ${{vars.REPOSITORIES[0]}}
     - uses: actions/checkout@v2
     - uses: ./
       with: 
