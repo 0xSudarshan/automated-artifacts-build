@@ -7,7 +7,10 @@ const ORGANISATION = getInput('ORGANISATION')
 // const ORGANISATION = "QlimesEth"
 const REPOSITORIES  = getInput('REPOSITORIES')
 
-console.log(REPOSITORIES,AUTH_TOKEN,ORGANISATION)
+for(let i =0;i<2;i++){
+    console.log(REPOSITORIES[i])
+}
+
 // const REPOSITORIES  = ["Test-Repo-1","Test-Repo-2"]
 
 // for(let r=0 ; r< REPOSITORIES.length;r++){
