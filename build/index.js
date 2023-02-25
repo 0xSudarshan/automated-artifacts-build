@@ -8057,11 +8057,10 @@ const REPOSITORIES  = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('R
 const octokit = new _octokit_core__WEBPACK_IMPORTED_MODULE_1__/* .Octokit */ .v({
     auth: AUTH_TOKEN
 })
-
-REPOSITORIES.forEach(repository => {
+for(let r=0 ; r< REPOSITORIES.length;r++){
     const {data} =  octokit.request('GET /repos/{org}/{repo}/issues?labels=agenda', {
         org:ORGANISATION,
-        repo:repository,
+        repo:REPOSITORIES[r],
       });
     const workMeetings =  octokit.request('GET /repos/{org}/{repo}/issues?labels=Working%20Meetings&per_page=1', {
         org: ORGANISATION,
@@ -8096,9 +8095,12 @@ REPOSITORIES.forEach(repository => {
             'X-GitHub-Api-Version': '2022-11-28'
         }
     })
+}
 
     
-});
+
+    
+
 
 
 
