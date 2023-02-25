@@ -4,9 +4,9 @@ inputs:
   AUTH_TOKEN:
     description: 'github token'
     required: true
-  # ORGANISATION:
-  #   description: 'Organisation'
-  #   required: true
+  ORGANISATION:
+    description: 'Organisation'
+    required: true
   # REPOSITORIES:
   #   description: 'github token'
   #   required: true
