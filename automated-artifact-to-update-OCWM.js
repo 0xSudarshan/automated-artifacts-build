@@ -9,11 +9,11 @@ const octokit = new Octokit({
     auth: AUTH_TOKEN
 })
 for(let r=0 ; r< REPOSITORIES.length;r++){
-    const {data} =  octokit.request('GET /repos/{org}/{repo}/issues?labels=agenda', {
+    const {data} = await octokit.request('GET /repos/{org}/{repo}/issues?labels=agenda', {
         org:ORGANISATION,
         repo:REPOSITORIES[r],
       });
-    const workMeetings =  octokit.request('GET /repos/{org}/{repo}/issues?labels=Working%20Meetings&per_page=1', {
+    const workMeetings = await octokit.request('GET /repos/{org}/{repo}/issues?labels=Working%20Meetings&per_page=1', {
         org: ORGANISATION,
         repo: 'Community',
         headers: {
