@@ -6,6 +6,7 @@ To run the Workflow Manually :
 2. Set repository sectrets to 
 a.  Name : AUTH_TOKEN 
 b.  Value : <YOUR_PAT>
+
 Note : the organisation should grant you the access to be able to make changes in the issue 
 
 Settings > third party accesss >  Personal Access Token > Settings > (under) Personal access token (classic) > (select) <'Allow access via personal access tokens (classic)'>
