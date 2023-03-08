@@ -8033,7 +8033,7 @@ for(let r=0 ; r< repositories.length;r++){
     let issue_numer = workMeetings.data[0].number
     for (let i = 0; i < data.length; i++) {
         let url = data[i].html_url
-        let author = data[i].user.login
+        let author = "@"+data[i].user.login
         let search = parseInt(JSON.stringify(body).search(url))
         if (search === -1) {
             let startIndex = parseInt(JSON.stringify(body.indexOf('\r\n| -- | -- | -- |\r\n')))
